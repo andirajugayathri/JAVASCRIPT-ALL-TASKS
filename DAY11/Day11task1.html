@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var img = document.createElement("img")
+        img.style.width="400px"
+        img.style.height="400px"
+        img.setAttribute("src" ,"https://www.squash.io/wp-content/uploads/2023/11/javascript-series.jpg")
+        
+        var btn1 = document.createElement("button")
+        btn1.innerText="button 1"
+        btn1.addEventListener("click",()=>{
+            img.setAttribute("src" ,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR90B3MTq_8XAItwjTZvl5JLFz5l4ibk6LkOQ&s")
+        })
+        var btn2 = document.createElement("button")
+        btn2.innerText="button 2"
+        btn2.addEventListener("click",()=>{
+            img.setAttribute("src" ,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzILLDRFyDGdzunj5UwPJ3gS3ir1yVUERBYA&s")
+        })
+        var btn3 = document.createElement("button")
+        btn3.innerText="button 3"
+        btn3.addEventListener("click",()=>{
+            img.setAttribute("src" ,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1i9A4Err8Fk0KiYMlPQWhux4RDRDN_7LOng&s")
+        })
+        var btn4 = document.createElement("button")
+        btn4.innerText="button 4"
+        btn4.addEventListener("click",()=>{
+            img.setAttribute("src" ,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8YIMwRuMEfDGPyfrgerweBH_uW2MrM7_kXg&s")
+        })
+
+        document.body.appendChild(img)
+        var br = document.createElement("br")
+        document.body.appendChild(br)
+        document.body.appendChild(btn1)
+        document.body.appendChild(btn2)
+        document.body.appendChild(btn3)
+        document.body.appendChild(btn4)
+    </script>
+</body>
+</html>
